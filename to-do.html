@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Manager</title>
+    <link rel="stylesheet" type="text/css" href="to-do.css">
+    <script type="text/javascript" src="to-do.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+    <h1 >To-Do List Manager</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+    <input type="date" id="dueDate">
+    
+
+    <button class="complete-button" onclick="toggleTaskCompletion(index)">Complete</button>
+ 
+    <div>
+        <button onclick="showAllTasks()">Show All</button>
+        <button onclick="showCompletedTasks()">Show Completed</button>
+        <button onclick="showPendingTasks()">Show Pending</button>
+        <button onclick="Undo()">Undo</button>
+        <button onclick="Redo()">Redo</button>
+       
+    </div>
+    <div id="taskList">
+       
+<button class="delete-button" onclick="deleteTask(index)">Delete</button>
+
+
+
+
+        <!-- Task list will be displayed here -->
+        <select id="taskPriority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+    </div>
+    </div>
+    </div>
+
+    
+    
+   
+</body>
+</html>
